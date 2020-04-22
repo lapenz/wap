@@ -1,0 +1,32 @@
+body {
+    font-family: Lucida Sans Unicode, Helvetica, Arial, sans-serif;
+    background-color: lightgray;
+}
+.mood {
+    width: 350px;
+    border-radius: 30px;
+}
+
+h1 {
+    font-size: 38px;
+}
+
+h2 {
+    color: darkgreen;
+}
+
+a, a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+    color: red;
+}
+
+p:first-letter {
+    font-size: 150%;
+}
+
+dl > dt {
+    color: #b1452b;
+}
+dl > dd {
+    color: #43413a;
+}
