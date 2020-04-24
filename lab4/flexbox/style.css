@@ -1,0 +1,59 @@
+#header {
+    padding: 10px;
+    text-align: center;
+    background-color: lightblue;
+    font-weight: bold;
+}
+
+#footer {
+    padding: 10px;
+    text-align: center;
+    background-color: #479891;
+    color: white;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #479891;
+}
+
+.menu > div {
+    border: solid 1px gray;
+    padding: 10px;
+    color: white;
+}
+
+.content {
+    display: flex;
+
+}
+
+.content > div {
+    height: 200px;
+}
+
+.left-content {
+    background-color: gray;
+    flex:25%;
+    padding: 10px;
+    color: white;
+}
+.mid-content {
+    background-color: #979696;
+    flex:50%;
+    padding: 10px;
+    color: white;
+}
+.right-content {
+    background-color: lightgray;
+    flex:25%;
+    padding: 10px;
+    color: white;
+}
+
+@media screen and (max-width: 600px) {
+    .content, .menu {
+        flex-direction: column;
+    }
+}

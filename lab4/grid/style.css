@@ -1,0 +1,57 @@
+#header {
+    padding: 10px;
+    text-align: center;
+    background-color: lightblue;
+    font-weight: bold;
+}
+
+#footer {
+    padding: 10px;
+    text-align: center;
+    background-color: #479891;
+    color: white;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(12, auto);
+    background-color: #479891;
+}
+
+.menu > div {
+    border: solid 1px gray;
+    padding: 10px;
+    color: white;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+}
+
+.content > div {
+    height: 200px;
+}
+
+.left-content {
+    background-color: gray;
+    padding: 10px;
+    color: white;
+}
+.mid-content {
+    background-color: #979696;
+
+    padding: 10px;
+    color: white;
+}
+.right-content {
+    background-color: lightgray;
+    padding: 10px;
+    color: white;
+}
+
+@media screen and (max-width: 600px) {
+    .content, .menu {
+        grid-template-columns: auto;
+    }
+}
