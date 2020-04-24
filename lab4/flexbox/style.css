@@ -52,7 +52,13 @@
 }
 
 @media screen and (max-width: 600px) {
-    .content, .menu {
-        flex-direction: column;
+    .content {
+        flex-wrap: wrap;
     }
+
+    .mid-content {
+        order: 3;
+    }
+
+
 }
