@@ -14,7 +14,6 @@
 
 .menu {
     display: flex;
-    flex-wrap: wrap;
     background-color: #479891;
 }
 
