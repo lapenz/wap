@@ -2,17 +2,17 @@
 
 $( document ).ready(function() {
 
-    $('#end').mouseenter(function () {
-        if($('.boundary').hasClass('youlose')){
-            $('#status').text("You lost!");
-        } else {
-            $('#status').text("You win!");
-        }
-        $('#maze').unbind('mouseleave');
-        $('.boundary').unbind('mouseenter');
-    });
-
     $("#start").click(function () {
+        $('#end').mouseenter(function () {
+            if($('.boundary').hasClass('youlose')){
+                $('#status').text("You lost!");
+            } else {
+                $('#status').text("You win!");
+            }
+            $('#maze').unbind('mouseleave');
+            $('.boundary').unbind('mouseenter');
+        });
+
         $('.boundary').removeClass('youlose');
 
         $('.boundary').mouseenter(function () {
