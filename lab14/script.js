@@ -17,7 +17,7 @@ $( document ).ready(function() {
         $('#user').html("<progress value='0' max='100'></progress>");
 
         const userId = $('#userid').val();
-        fetch('http://jsonplaceholder.typicode.com/users?id=' + userId)
+        fetch('https://jsonplaceholder.typicode.com/users?id=' + userId)
             .then(response => response.json())
             .then(json => {
                 $('#user').empty();
@@ -30,7 +30,7 @@ $( document ).ready(function() {
                 $('#user').html(error);
             });
 
-        fetch('http://jsonplaceholder.typicode.com/posts?userId=' + userId)
+        fetch('https://jsonplaceholder.typicode.com/posts?userId=' + userId)
             .then(response => response.json())
             .then(json => {
                 $('#content').empty();
@@ -57,7 +57,7 @@ $( document ).ready(function() {
         const postId = $(this).attr('data-id');
         $(this).after("<progress value='0' max='100'></progress>");
 
-        fetch('http://jsonplaceholder.typicode.com/comments?postId=' + postId)
+        fetch('https://jsonplaceholder.typicode.com/comments?postId=' + postId)
             .then(response => response.json())
             .then(json => {
                 let content = $("<span/>");
